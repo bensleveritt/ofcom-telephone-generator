@@ -34,6 +34,13 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
-      - run: yarn test
-
-
+      - run:
+          command: |
+            yarn add -D ava tap-xunit
+            mkdir -p ~/reports
+            ./node_modules/.bin/ava --tap | ./node_modules/.bin/tap-xunit > ~/reports/ava.xml
+          when: always
+      - store_test_results:
+          path: ~/reports
+      - store_artifacts:
+          path: ~/reports
