@@ -1,9 +1,22 @@
 # Ofcom Telephone Number Generator
 
-The intent of this lib is to provide a random generator of [Ofcom suggested](https://www.ofcom.org.uk/phones-telecoms-and-internet/information-for-industry/numbering/numbers-for-drama) 'safe' phone numbers, particularly for use in fictional/promotional/test usages.
+The intent of this lib is to provide a random generator of [Ofcom suggested](https://www.ofcom.org.uk/phones-telecoms-and-internet/information-for-industry/numbering/numbers-for-drama) sanctified phone numbers, particularly for use in fictional/promotional/test usages.
+
+## Usage
 
 ```javascript
-import telGenerator from 'ofcom-telgen';
+import generator from 'ofcom-telgen';
 
-telGenerator();
+const phoneNumber = generator();
 ```
+
+## Todo
+
+- Implement area codes
+- Implement mobile numbers
+- Check upper and lower bounds provide 1000 numbers
+- Validate phone numbers
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
