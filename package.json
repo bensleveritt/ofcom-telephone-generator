@@ -6,10 +6,13 @@
   "author": "Benjamin S. Leveritt <benjamin@leveritt.co.uk>",
   "license": "MIT",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "test:watch": "ava --watch",
+    "test:coverage": "nyc ava"
   },
   "devDependencies": {
     "ava": "^0.19.1",
-    "eslint": "^4.11.0"
+    "eslint": "^4.11.0",
+    "nyc": "^11.3.0"
   }
 }
