@@ -1,6 +1,6 @@
 # Ofcom Telephone Number Generator
 
-The intent of this lib is to provide a random generator of [Ofcom suggested](https://www.ofcom.org.uk/phones-telecoms-and-internet/information-for-industry/numbering/numbers-for-drama) sanctified phone numbers, particularly for use in fictional/promotional/test usages.
+The intent of this lib is to provide a random generator of [Ofcom-sanctified](https://www.ofcom.org.uk/phones-telecoms-and-internet/information-for-industry/numbering/numbers-for-drama) UK phone numbers, particularly for use in fictional/promotional/test usages.
 
 ## Usage
 
