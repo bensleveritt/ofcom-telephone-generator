@@ -1,11 +1,15 @@
-telGenerator = function(areacode) {
-  if (areacode) return `Area codes aren't supported yet.`;
+/**
+ * Generator module
+ */
 
-  const range = 999;
-  const telNumber = ('000' + Math.round(Math.random() * 999)).slice(-3);
+const random = () => Math.round(Math.random() * 999);
+const pad = num => ('000' + num).slice(-3);
+
+/**
+ * Generator function
+ * @return {String} A generated UK telephone number
+ */
+module.exports = function() {
+  const telNumber = pad(random());
   return `01632960${telNumber}`;
-};
-
-module.exports = {
-  telGenerator,
 };
