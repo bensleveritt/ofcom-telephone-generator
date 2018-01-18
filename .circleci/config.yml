@@ -35,11 +35,16 @@ jobs:
 
       # run tests!
       - run:
+          name: Run unit tests
           command: |
             yarn add -D ava tap-xunit
             mkdir -p ~/reports
             ./node_modules/.bin/ava --tap | ./node_modules/.bin/tap-xunit > ~/reports/ava.xml
+            ./node_modules/.bin/nyc --reporter=text-lcov ./node_modules/.bin/nyc
           when: always
+      - run:
+          name: Generate code coverage
+          command: './node_modules/.bin/nyc report --reporter=text-lcov'
       - store_test_results:
           path: ~/reports
       - store_artifacts:
