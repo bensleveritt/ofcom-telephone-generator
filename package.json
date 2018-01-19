@@ -1,6 +1,6 @@
 {
   "name": "ofcom-telgen",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An Ofcom-sanctified fake UK telephone number generator",
   "main": "dist/ofcom-telgen.js",
   "module": "src/main.js",
