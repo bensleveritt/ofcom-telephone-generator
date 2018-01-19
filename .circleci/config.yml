@@ -39,13 +39,13 @@ jobs:
           command: |
             yarn add -D ava tap-xunit
             mkdir -p ~/reports
-            yarn ava --tap | ./node_modules/.bin/tap-xunit > ~/reports/ava.xml
+            ./node_modules/.bin/ava --tap | ./node_modules/.bin/tap-xunit > ~/reports/ava.xml
           when: always
       - run:
           name: Generate code coverage
           command: |
-            yarn nyc --reporter=text-lcov ./node_modules/.bin/ava'
-            yarn codecov
+            ./node_modules/.bin/nyc --reporter=text-lcov ./node_modules/.bin/ava
+            ./node_modules/.bin/codecov
       - store_test_results:
           path: ~/reports
       - store_artifacts:
