@@ -2,10 +2,12 @@
   "name": "ofcom-telgen",
   "version": "0.1.0",
   "description": "An Ofcom-sanctified fake UK telephone number generator",
-  "main": "index.js",
+  "main": "dist/ofcom-telgen.js",
+  "module": "src/main.js",
   "author": "Benjamin S. Leveritt <benjamin@leveritt.co.uk>",
   "license": "MIT",
   "scripts": {
+    "build": "rollup src/main.js --o dist/ofcom-telgen.js -f umd --name 'ofcom-telgen'",
     "test": "ava",
     "test:watch": "ava --watch",
     "test:coverage": "nyc ava"
@@ -15,6 +17,7 @@
     "codecov": "^3.0.0",
     "eslint": "^4.11.0",
     "nyc": "^11.3.0",
+    "rollup": "^0.54.1",
     "tap-xunit": "^1.7.0"
   }
 }
