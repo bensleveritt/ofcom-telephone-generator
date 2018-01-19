@@ -2,6 +2,7 @@
 
 The intent of this lib is to provide a random generator of [Ofcom-sanctified](https://www.ofcom.org.uk/phones-telecoms-and-internet/information-for-industry/numbering/numbers-for-drama) UK phone numbers, particularly for use in fictional/promotional/test usages.
 
+[![CircleCI](https://circleci.com/gh/bensleveritt/ofcom-telephone-generator/tree/master.svg?style=svg)](https://circleci.com/gh/bensleveritt/ofcom-telephone-generator/tree/master)
 [![codecov](https://codecov.io/gh/bensleveritt/ofcom-telephone-generator/branch/master/graph/badge.svg)](https://codecov.io/gh/bensleveritt/ofcom-telephone-generator)
 
 ## Usage
