@@ -15,7 +15,6 @@ const phoneNumber = generator();
 
 ## Todo
 
-* Publish to NPM
 * Implement area codes
 * Implement mobile numbers
 * Check upper and lower bounds provide 1000 numbers
