@@ -10,15 +10,16 @@ The intent of this lib is to provide a random generator of [Ofcom-sanctified](ht
 ```javascript
 import generator from 'ofcom-telgen';
 
-const phoneNumber = generator();
+const phoneNumber = generator(); // 01632960123
 ```
 
 ## Todo
 
-* Implement area codes
-* Implement mobile numbers
-* Check upper and lower bounds provide 1000 numbers
-* Validate phone numbers
+- [ ] Implement area codes
+- [ ] Implement mobile numbers
+- [x] Check upper and lower bounds provide 1000 numbers
+- [ ] Validate phone numbers
+- [ ] Add typing to output
 
 ## License
 
