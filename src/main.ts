@@ -1,11 +1,8 @@
-const random = () => Math.round(Math.random() * 999);
-const pad = (num: number) => ('000' + num).slice(-3);
+import { randomNumber } from './utils/randomNumber';
+import { leftPad } from './utils/leftPad';
 
 /**
  * Ofcom Telgen
  * @return {String} A generated UK telephone number
  */
-export default function(): string {
-  const telNumber = pad(random());
-  return `01632960${telNumber}`;
-}
+export default (): string => `01632960${leftPad(randomNumber())}`;
