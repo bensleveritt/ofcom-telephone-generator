@@ -7,7 +7,7 @@
   "author": "Benjamin S. Leveritt <benjamin@leveritt.co.uk>",
   "license": "MIT",
   "scripts": {
-    "build": "rollup src/main.js --o dist/ofcom-telgen.js -f umd --name 'ofcom-telgen'",
+    "build": "rollup -c rollup.config.js",
     "test": "ava",
     "test:watch": "ava --watch",
     "test:coverage": "nyc ava"
