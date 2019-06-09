@@ -6,11 +6,11 @@ test('outputs `000` with nothing to pad', t => {
   t.true(leftPad(0) === '000');
 });
 
-test('outputs `001`', t => {
+test('outputs `001` with number', t => {
   t.true(leftPad(1) === '001');
 });
 
-test('outputs `001`', t => {
+test('outputs `001` with string', t => {
   t.true(leftPad('1') === '001');
 });
 
