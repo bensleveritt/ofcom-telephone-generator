@@ -1,7 +1,11 @@
+import typescript from 'rollup-plugin-typescript';
+
 export default {
-  input: "./src/main.js",
+  input: './src/main.ts',
   output: {
-    format: "umd",
-    file: "./dist/ofcom-telgen-2.js"
-  }
+    format: 'umd',
+    file: './dist/ofcom-telgen.js',
+    name: 'ofcom-telgen',
+  },
+  plugins: [typescript()],
 };

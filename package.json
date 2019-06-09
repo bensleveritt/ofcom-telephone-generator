@@ -17,7 +17,11 @@
     "codecov": "^3.0.0",
     "eslint": "^4.11.0",
     "nyc": "^11.3.0",
+    "prettier": "^1.18.2",
     "rollup": "^0.54.1",
-    "tap-xunit": "^1.7.0"
+    "rollup-plugin-typescript": "^1.0.1",
+    "tap-xunit": "^1.7.0",
+    "tslib": "^1.9.3",
+    "typescript": "^3.5.1"
   }
 }
