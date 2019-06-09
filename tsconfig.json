@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "noImplicitAny": false,
-    "noUnusedLocals": false,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
     "noUnusedParameters": false,
     "removeComments": true,
     "preserveConstEnums": true,

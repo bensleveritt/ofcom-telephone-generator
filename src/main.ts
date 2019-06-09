@@ -1,14 +1,11 @@
-/**
- * Generator module
- */
 const random = () => Math.round(Math.random() * 999);
-const pad = num => ('000' + num).slice(-3);
+const pad = (num: number) => ('000' + num).slice(-3);
 
 /**
- * Generator function
+ * Ofcom Telgen
  * @return {String} A generated UK telephone number
  */
-export default function() {
+export default function(): string {
   const telNumber = pad(random());
   return `01632960${telNumber}`;
 }
